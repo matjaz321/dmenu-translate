@@ -42,11 +42,11 @@ load_config() {
 		: "${CLIP_PASTE_CLIP:=xclip -o -selection clipboard}"
 		: "${CLIP_PASTE_PRIM:=xclip -o -selection primary}"
 		: "${DMENU:=dmenu}"
-		: "${TERMINAL=xterm}"
+		: "${TERMINAL=ghostty}"
 	fi
 
 	# Default values
-	: "${TRANS_LANGS:=:ru :en}"
+	: "${TRANS_LANGS:=:de :en}"
 	: "${DMENU_TEXT:=${DMENU} -i -p 'Translate: Text'}"
 	: "${DMENU_LANG:=${DMENU} -i -p 'Translate: Into'}"
 	: "${DMENU_NEXT:=${DMENU} -i -p 'Translate: Next?'}"
